@@ -14,7 +14,7 @@ export const imagesBaseUrl = 'https://image.tmdb.org/t/p/';
 })
 export class MoviesService {
 
-  private apiUrl = 'https://api.themoviedb.org/3';
+  private apiUrl = 'https://api.themoviedb.wrongdomain/3';
   private apiKey = environment.apiKEY;
   private httpClient = inject(HttpClient);
   constructor() { }
