@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: movies-app
-          image: aksautoregistry.azurecr.io/movies-app:latest
+          image: ghcr.io/dsanchor/movies-app:latest
           resources:
             limits:
               cpu: "1"
@@ -45,7 +45,7 @@ metadata:
 spec:
   ingressClassName: webapprouting.kubernetes.azure.com
   rules:
-    - host: moviesapp.aksauto.azure.d-sancho.com
+    - host: $INGRESS_HOST
       http:
         paths:
           - path: /
