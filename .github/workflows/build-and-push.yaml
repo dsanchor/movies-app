@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - backenderror
 
 jobs:
   build-and-push:
@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.actor }}/movies-app:latest
+          tags: ghcr.io/${{ github.actor }}/movies-app:backenderror
